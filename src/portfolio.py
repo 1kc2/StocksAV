@@ -3,6 +3,7 @@ from position import Position
 class Portfolio:
     def __init__(self, positions):
         # positions: array of Position objects
+        
         self.positions = positions
 
     def open_pnl(self):

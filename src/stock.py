@@ -38,7 +38,7 @@ class Stock:
             return float(value["4. close"])
 
     def get_moving_average(self, timeperiod):
-        # Get moving average of a stock over a given timeperiod
+        # Get moving average of a stock over a given time period
         url = "https://www.alphavantage.co/query?function=SMA&symbol="+self.symbol+"&interval=daily&time_period="+str(timeperiod)+"&series_type=low&apikey="+self.alphavantage_api_key
         data = requests.get(url)
         return data.json()["Technical Analysis: SMA"][self.date]["SMA"]

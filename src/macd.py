@@ -31,7 +31,6 @@ class MACD(Strategy):
         else: 
             return 0
 
-
 if __name__ == '__main__':
     strategy = MACD()
     stock = Stock("SHOP.TO", "2019-11-04")

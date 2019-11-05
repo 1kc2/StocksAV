@@ -1,9 +1,9 @@
 from decision import Strategy
 from stock import Stock
-
+ 
 class movingAverages(Strategy):
     def decision(self, stock):
-        # Compare 50 and 200 day averages. 
+        # Compare 50 and 200 day averages 
         # If 50 is greater, bullish
         # If 200 is greater, bearish
 
@@ -19,6 +19,6 @@ class movingAverages(Strategy):
 
 if __name__ == '__main__':
     strategy = movingAverages()
-    stock = Stock("SHOP.TO", "2019-11-03")
+    stock = Stock("SHOP.TO", "2019-11-04")
     decision = strategy.decision(stock)
     print(decision)
